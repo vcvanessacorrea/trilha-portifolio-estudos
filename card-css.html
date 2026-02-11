@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilha CSS</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        header {
+            padding: 64px 24px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            max-width: 700px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        section {
+            margin-bottom: 56px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card p,
+        .card li {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e40af;
+            color: #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+
+        a.voltar {
+            display: inline-block;
+            margin-top: 32px;
+            text-decoration: none;
+            color: #93c5fd;
+            font-size: 0.9rem;
+        }
+
+        a.voltar:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 16px;
+            border-top: 1px solid #1e293b;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS</h1>
+        <p>
+            A trilha de CSS é responsável por transformar estrutura em experiência visual,
+            cuidando de layout, cores, tipografia e responsividade.
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>O que é CSS?</h2>
+
+            <div class="card">
+                <p>
+                    CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas web.
+                    Ela controla aparência, posicionamento e adaptação do conteúdo em diferentes telas.
+                </p>
+
+                <span class="tag">Estilo</span>
+                <span class="tag">Layout</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Seletores</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Seletores de elemento (<code>p</code>, <code>div</code>)</li>
+                    <li>Classes (<code>.card</code>)</li>
+                    <li>IDs (<code>#header</code>)</li>
+                    <li>Seletores combinados</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Box Model</h2>
+
+            <div class="card">
+                <p>
+                    O Box Model define como os elementos ocupam espaço na página.
+                </p>
+
+                <ul>
+                    <li>Content</li>
+                    <li>Padding</li>
+                    <li>Border</li>
+                    <li>Margin</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Layouts</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Display block / inline / inline-block</li>
+                    <li>Flexbox</li>
+                    <li>Grid Layout</li>
+                    <li>Position (relative, absolute, fixed)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Responsividade</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Media Queries</li>
+                    <li>Unidades relativas (%, em, rem, vw)</li>
+                    <li>Layouts fluidos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Boas Práticas</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Organizar o CSS por seções</li>
+                    <li>Evitar estilos inline</li>
+                    <li>Usar nomes de classes semânticos</li>
+                    <li>Reutilizar componentes visuais</li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <p>Trilha CSS — Portfólio de Estudos 🚀</p>
+    </footer>
+
+</body>
+
+</html>

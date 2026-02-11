@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilha React</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        header {
+            padding: 64px 24px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            max-width: 700px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        section {
+            margin-bottom: 56px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card p,
+        .card li {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e40af;
+            color: #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+
+        a.voltar {
+            display: inline-block;
+            margin-top: 32px;
+            text-decoration: none;
+            color: #93c5fd;
+            font-size: 0.9rem;
+        }
+
+        a.voltar:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 16px;
+            border-top: 1px solid #1e293b;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>React</h1>
+        <p>
+            React é uma biblioteca JavaScript para criação de interfaces
+            componentizadas, reutilizáveis e escaláveis.
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>O que é React?</h2>
+
+            <div class="card">
+                <p>
+                    React é uma biblioteca criada pelo Facebook que permite construir
+                    interfaces de usuário a partir de componentes, facilitando
+                    manutenção e reutilização de código.
+                </p>
+
+                <span class="tag">Componentes</span>
+                <span class="tag">UI</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Componentes</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Componentes funcionais</li>
+                    <li>JSX</li>
+                    <li>Props</li>
+                    <li>Reutilização de componentes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Estado (State)</h2>
+
+            <div class="card">
+                <p>
+                    O estado representa dados que podem mudar ao longo do tempo
+                    dentro de um componente.
+                </p>
+
+                <ul>
+                    <li>useState</li>
+                    <li>Estado local</li>
+                    <li>Atualização de componentes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Eventos</h2>
+
+            <div class="card">
+                <ul>
+                    <li>onClick</li>
+                    <li>onChange</li>
+                    <li>Manipulação de eventos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ciclo de Vida</h2>
+
+            <div class="card">
+                <ul>
+                    <li>useEffect</li>
+                    <li>Montagem</li>
+                    <li>Atualização</li>
+                    <li>Desmontagem</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Boas Práticas</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Componentes pequenos e reutilizáveis</li>
+                    <li>Separar lógica e UI</li>
+                    <li>Evitar estado desnecessário</li>
+                    <li>Organizar pastas</li>
+                </ul>
+            </div>
+        </section>
+
+       
+
+    </main>
+
+    <footer>
+        <p>Trilha React — Portfólio de Estudos 🚀</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Estudos | Frontend</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        header {
+            padding: 64px 24px;
+            text-align: center;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        section {
+            margin-bottom: 64px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-bottom: 16px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e40af;
+            color: #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 16px;
+            border-top: 1px solid #1e293b;
+            opacity: 0.7;
+        }
+
+        /* LINKS DOS CARDS — NÃO ALTERA LAYOUT */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: contents;
+        }
+
+        /* HOVERS POR GRUPO DE CARDS */
+        .grid a:nth-child(-n+3) .card:hover {
+            background: #2563eb;
+            color: #eff6ff;
+            border-color: #60a5fa;
+            box-shadow:
+                0 0 0 1px rgba(37, 99, 235, 0.4),
+                0 0 25px rgba(37, 99, 235, 0.6),
+                0 0 50px rgba(37, 99, 235, 0.35);
+        }
+
+        .grid a:nth-child(n+4):nth-child(-n+6) .card:hover {
+            background: #facc15;
+            color: #1f2937;
+            border-color: #fde047;
+            box-shadow:
+                0 0 0 1px rgba(250, 204, 21, 0.4),
+                0 0 25px rgba(250, 204, 21, 0.6),
+                0 0 50px rgba(250, 204, 21, 0.35);
+        }
+
+        .grid a:nth-child(n+7):nth-child(-n+9) .card:hover {
+            background: #7c3aed;
+            color: #f5f3ff;
+            border-color: #a78bfa;
+            box-shadow:
+                0 0 0 1px rgba(124, 58, 237, 0.4),
+                0 0 25px rgba(124, 58, 237, 0.6),
+                0 0 50px rgba(124, 58, 237, 0.35);
+        }
+
+        /* SEÇÃO PRATICANDO */
+        .praticando-texto {
+            margin-top: -8px;
+            margin-bottom: 32px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.85;
+            max-width: 100%;
+            /* agora ocupa toda a largura disponível */
+        }
+
+
+        .praticando-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .card.pratica:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div
+            style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+            <div style="text-align:left;">
+                <h1>Portfólio de Estudos</h1>
+                <p>
+                    Olá, Sou uma <strong>Dev Frontend em constante evolução</strong> e este espaço reúne minhas trilhas
+                    de estudo,
+                    anotações práticas e aprendizados. Espero ajudar vocês que estão começando ou buscando organizar
+                    seus estudos também!
+                </p>
+            </div>
+            <div style="text-align:center;">
+                <img src="./foto-dev.png" alt="Ilustração Dev Frontend"
+                    style="max-width:60%;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.4);" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Objetivo do Projeto</h2>
+            <div class="card">
+                <p>
+                    Este site serve como um repositório vivo de estudos, onde cada trilha pode evoluir com anotações,
+                    exemplos práticos, links úteis e pequenos projetos.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Trilhas de Estudo</h2>
+
+            <div class="grid">
+
+                <a href="card-logica.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>Lógica de Programação</h3>
+                        <p>Fundamentos do raciocínio lógico, algoritmos e resolução de problemas.</p>
+                        <span class="tag">Base</span>
+                        <span class="tag">Algoritmos</span>
+                    </div>
+                </a>
+
+                <a href="card-git-github.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>Git & GitHub</h3>
+                        <p>Controle de versão, fluxos de trabalho e colaboração em projetos.</p>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                </a>
+
+                <a href="card-html.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>HTML</h3>
+                        <p>Estruturação semântica de páginas web.</p>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">Semântica</span>
+                    </div>
+                </a>
+
+                <a href="card-css.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>CSS</h3>
+                        <p>Estilização, layouts, responsividade e boas práticas visuais.</p>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Flexbox</span>
+                        <span class="tag">Grid</span>
+                    </div>
+                </a>
+
+                <a href="card-js.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>JavaScript</h3>
+                        <p>Programação para web, DOM, lógica e interatividade.</p>
+                        <span class="tag">JS</span>
+                        <span class="tag">DOM</span>
+                    </div>
+                </a>
+
+                <a href="card-react.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>React</h3>
+                        <p>Construção de interfaces com componentes e estado.</p>
+                        <span class="tag">React</span>
+                        <span class="tag">Componentes</span>
+                    </div>
+                </a>
+
+                <a href="card-typescript.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>TypeScript</h3>
+                        <p>JavaScript com tipagem para aplicações mais seguras.</p>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Tipos</span>
+                    </div>
+                </a>
+
+                <a href="card-ferramentas.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>Ferramentas</h3>
+                        <p>Setup de ambiente, editores, extensões e produtividade.</p>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Terminal</span>
+                    </div>
+                </a>
+
+                <a href="card-frameworks.html" class="card-link" target="_blank">
+                    <div class="card">
+                        <h3>Frameworks</h3>
+                        <p>Estudo de frameworks e bibliotecas modernas.</p>
+                        <span class="tag">Frontend</span>
+                        <span class="tag">Frameworks</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO PRATICANDO -->
+        <section>
+            <h2>Praticando</h2>
+            <p class="praticando-texto">
+                Os níveis abaixo representam uma progressão prática de aprendizado.
+                Cada etapa possui um foco específico e deve ser concluída com atenção,
+                priorizando o entendimento do código, a prática constante e o uso consciente da IA.
+                Por exemplo, você pode usar o ChatGPT para criar atividades práticas conforme avança nos estudos.
+                Hoje, se você aprendeu a criar cards e alterar cores de tela, pode pedir ao ChatGPT para gerar
+                exercícios relacionados,
+                ajudando a fixar e expandir seu aprendizado.
+            </p>
+
+
+            <div class="praticando-cards">
+                <div class="card pratica basico">
+                    <h3>Nível Básico</h3>
+                    <p>Foco em fundamentos: lógica, HTML, CSS e JavaScript básico. Exercícios simples, entendimento do
+                        código e uso da IA apenas para explicações e revisão.</p>
+                    <span class="tag">Fundamentos</span>
+                    <span class="tag">Base</span>
+                </div>
+
+                <div class="card pratica intermediario">
+                    <h3>Nível Intermediário</h3>
+                    <p>Aplicação prática dos conceitos com DOM, eventos, organização de código e pequenos projetos. A IA
+                        atua como apoio para debugging e refatoração.</p>
+                    <span class="tag">DOM</span>
+                    <span class="tag">Projetos</span>
+                </div>
+
+                <div class="card pratica avancado">
+                    <h3>Nível Avançado</h3>
+                    <p>Desafios mais próximos do mundo real, decisões técnicas, performance e projetos completos. Uso
+                        estratégico da IA como copiloto.</p>
+                    <span class="tag">Desafios reais</span>
+                    <span class="tag">Performance</span>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Feito para estudar, errar, aprender e evoluir 🚀</p>
+    </footer>
+
+</body>
+
+</html>

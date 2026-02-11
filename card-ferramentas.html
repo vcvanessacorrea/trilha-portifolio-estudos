@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de Ferramentas – Frontend</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0a0f1f;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #11162a;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        header h1 {
+            color: #3b82f6;
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3b82f6;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        /* INTRO */
+        .intro {
+            background: linear-gradient(135deg, #11162a, #0f1a3d);
+            padding: 50px 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            margin-bottom: 60px;
+
+            text-align: left;
+            /* Alinha o texto à esquerda */
+        }
+
+        .intro h2 {
+            color: #3b82f6;
+            margin-bottom: 20px;
+            text-align: center;
+            /* Título centralizado */
+        }
+
+        .intro p {
+            font-size: 1.05rem;
+            opacity: 0.95;
+            margin-top: 10px;
+            line-height: 1.6;
+            max-width: 850px;
+            /* Mantém o texto com largura agradável */
+            margin-left: auto;
+            margin-right: auto;
+            /* Centraliza o bloco de texto horizontalmente */
+        }
+
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #11162a;
+            border-radius: 14px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            background: #097894;
+            /* roxo claro */
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(167, 139, 250, 0.25);
+            border-color: #a78bfa;
+        }
+
+
+        .card h3 {
+            color: #3b82f6;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #11162a;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #3b82f6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trilha de Ferramentas – Frontend</h1>
+    </header>
+
+    <main>
+
+        <!-- INTRODUÇÃO -->
+        <section class="intro">
+            <h2>Sobre esta trilha</h2>
+            <p>
+            <ul>
+                <li>Esta trilha é focada em ferramentas essenciais para desenvolvedores frontend.</li>
+                <li>Ela é ideal para iniciantes que desejam montar um kit básico de ferramentas.</li>
+                <li>Também é útil para desenvolvedores experientes que buscam otimizar seu fluxo de trabalho.</li>
+                <li>O objetivo principal não é aprender linguagens, mas conhecer os recursos que ajudam a criar
+                    interfaces mais
+                    rápidas, organizadas e profissionais.</li>
+            </ul>
+            </p>
+
+        </section>
+
+        <!-- DESIGN -->
+        <section>
+            <h2> Design e UI</h2>
+
+            <div class="cards">
+                <div class="card" onclick="window.open('https://www.figma.com', '_blank')">
+                    <h3>Figma</h3>
+                    <p>Criação de layouts, protótipos e colaboração entre design e desenvolvimento.</p>
+                </div>
+
+                <div class="card" onclick="window.open('https://www.figma.com/figjam/', '_blank')">
+                    <h3>FigJam</h3>
+                    <p>Quadro colaborativo para fluxos, brainstorm e organização de ideias.</p>
+                </div>
+
+                <div class="card" onclick="window.open('https://www.canva.com', '_blank')">
+                    <h3>Canva</h3>
+                    <p>Ferramenta simples para criação rápida de artes e materiais visuais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASSETS -->
+        <section>
+            <h2> Imagens e Ícones</h2>
+
+            <div class="cards">
+                <div class="card" onclick="window.open('https://www.pexels.com', '_blank')">
+                    <h3>Pexels</h3>
+                    <p>Banco gratuito de imagens e vídeos para projetos web.</p>
+                </div>
+
+                <div class="card" onclick="window.open('https://unsplash.com', '_blank')">
+                    <h3>Unsplash</h3>
+                    <p>Fotos de alta qualidade para interfaces modernas.</p>
+                </div>
+
+                <div class="card" onclick="window.open('https://heroicons.com', '_blank')">
+                    <h3>Heroicons</h3>
+                    <p>Ícones SVG modernos e prontos para uso em interfaces.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FRAMEWORKS -->
+        <section>
+            <h2> Frameworks CSS</h2>
+
+            <div class="cards">
+                <div class="card" onclick="window.open('https://getbootstrap.com', '_blank')">
+                    <h3>Bootstrap</h3>
+                    <p>
+                        Framework CSS com grid system e componentes prontos para criar
+                        interfaces responsivas rapidamente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEVTOOLS -->
+        <section>
+            <h2> DevTools e Debug</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Chrome DevTools</h3>
+                    <p>Ferramenta do navegador para inspecionar, debugar e testar layouts.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Lighthouse</h3>
+                    <p>Análise de performance, acessibilidade e boas práticas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Responsively App</h3>
+                    <p>Testes simultâneos de responsividade em vários dispositivos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUTIVIDADE -->
+        <section>
+            <h2> Produtividade</h2>
+
+            <div class="cards">
+                <div class="card" onclick="window.open('https://code.visualstudio.com', '_blank')">
+                    <h3>VS Code</h3>
+                    <p>Editor de código com extensões poderosas para frontend.</p>
+                </div>
+
+                <div class="card" onclick="window.open('https://codepen.io', '_blank')">
+                    <h3>CodePen</h3>
+                    <p>Ambiente online para testar e compartilhar código frontend.</p>
+                </div>
+
+                <div class="card" onclick="window.open('https://jsfiddle.net', '_blank')">
+                    <h3>JSFiddle</h3>
+                    <p>Editor online para testes rápidos de HTML, CSS e JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Feito com 💙 por Vanessa Cristina Correa</p>
+    </footer>
+
+</body>
+
+</html>

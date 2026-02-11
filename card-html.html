@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilha HTML</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        header {
+            padding: 64px 24px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            max-width: 700px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        section {
+            margin-bottom: 56px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .card p,
+        .card li {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e40af;
+            color: #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+
+        a.voltar {
+            display: inline-block;
+            margin-top: 32px;
+            text-decoration: none;
+            color: #93c5fd;
+            font-size: 0.9rem;
+        }
+
+        a.voltar:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 16px;
+            border-top: 1px solid #1e293b;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML</h1>
+        <p>
+            Esta trilha aborda os fundamentos do HTML, focando em estrutura,
+            semântica e boas práticas para construção de páginas web.
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>O que é HTML?</h2>
+
+            <div class="card">
+                <p>
+                    HTML (HyperText Markup Language) é a linguagem responsável pela
+                    estruturação do conteúdo na web. Ele define títulos, parágrafos,
+                    imagens, links, formulários e a hierarquia da informação.
+                </p>
+
+                <span class="tag">Estrutura</span>
+                <span class="tag">Web</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Estrutura Básica</h2>
+
+            <div class="card">
+                <p>
+                    Todo documento HTML segue uma estrutura padrão que garante
+                    compatibilidade com navegadores e boas práticas.
+                </p>
+
+                <ul>
+                    <li><strong>&lt;!DOCTYPE html&gt;</strong> — define HTML5</li>
+                    <li><strong>&lt;html&gt;</strong> — elemento raiz</li>
+                    <li><strong>&lt;head&gt;</strong> — metadados</li>
+                    <li><strong>&lt;body&gt;</strong> — conteúdo visível</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tags Semânticas</h2>
+
+            <div class="card">
+                <p>
+                    Tags semânticas dão significado ao conteúdo, melhorando acessibilidade
+                    e SEO.
+                </p>
+
+                <ul>
+                    <li><strong>&lt;header&gt;</strong> — cabeçalho</li>
+                    <li><strong>&lt;main&gt;</strong> — conteúdo principal</li>
+                    <li><strong>&lt;section&gt;</strong> — seções</li>
+                    <li><strong>&lt;article&gt;</strong> — conteúdo independente</li>
+                    <li><strong>&lt;footer&gt;</strong> — rodapé</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Elementos Comuns</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Títulos: <strong>&lt;h1&gt; a &lt;h6&gt;</strong></li>
+                    <li>Texto: <strong>&lt;p&gt;</strong></li>
+                    <li>Links: <strong>&lt;a&gt;</strong></li>
+                    <li>Imagens: <strong>&lt;img&gt;</strong></li>
+                    <li>Listas: <strong>&lt;ul&gt;</strong>, <strong>&lt;ol&gt;</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Boas Práticas</h2>
+
+            <div class="card">
+                <ul>
+                    <li>Usar HTML semântico</li>
+                    <li>Manter hierarquia correta de títulos</li>
+                    <li>Usar atributos <strong>alt</strong> em imagens</li>
+                    <li>Evitar divs desnecessárias</li>
+                </ul>
+            </div>
+        </section>
+
+      
+
+    </main>
+
+    <footer>
+        <p>Trilha HTML — Portfólio de Estudos 🚀</p>
+    </footer>
+
+</body>
+
+</html>
